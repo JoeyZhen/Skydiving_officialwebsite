@@ -1,0 +1,180 @@
+
+*{box-sizing : border-box }
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: skyblue;
+
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background:white;
+  background-image: url("../images/jump03.jpg");
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: rgba(6, 218, 255, 0.692);
+  color: black;
+}
+
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: orange;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: red;
+}
+
+
+
+footer{text-align: center;}
+
+figure{ text-align: center; border: thick orange solid; margin: 0px;}
+
+.middle{ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;}
+
+
+.word{font-family:verdana;line-height:35px;}
+
+.comment{font-family:verdana;line-height:35px;font-style: italic;}
+
+.fakeimgcenter{
+  background-color: grey;
+  width: 100%;
+  padding: 20px;
+  text-align:center;}
+
+.fakeimgcolor{background-color: lightpink;
+  width: 100%;
+  padding: 20px;
+  }
+
+.video{padding-left: 0px;}
+
+.nextpage{font-family:verdana;line-height:35px;text-align: center;}
+
+.facing{font-family:verdana;line-height:35px; font-size: small;}
+
+.nexttopics{margin-left:77em; color: orangered;}
+
+.words{font-family:verdana;line-height:50px;}
+
+.wordcenter{text-align: center;font-family:verdana;line-height:35px; color:yellow}
+
+.zooms {
+  position:relative;
+  text-align: center;
+}
+.zooms .zooms-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.zooms:hover .zooms-top {
+  display: inline;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 1920px) {
+  .leftcolumn, .rightcolumn ,.zoom,.middle,video{   
+    width: 100%;
+    padding: 0;
+    
+  }
+}
+
+@media screen and (max-width: 3600px) {
+  .zoomes,.zooms-top{   
+    width: 100%;
+    padding: 0;
+    
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media print{
+  .nav{display: none;}
+  .topnav{display: none;}
+}
